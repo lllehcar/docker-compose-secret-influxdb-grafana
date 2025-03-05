@@ -1,6 +1,11 @@
-# InfluxDB and Grafana Deployment using Docker Compose
+<img width="280" alt="Screenshot 2025-03-05 at 11 39 28 PM" src="https://github.com/user-attachments/assets/0bbbe423-fe4f-455f-8a6b-95859042e847" />
+<img width="280" alt="Screenshot 2025-03-05 at 11 39 52 PM" src="https://github.com/user-attachments/assets/fdd37bc0-02b9-4f99-873d-934b74c922cf" />
+<img width="230" alt="Screenshot 2025-03-05 at 11 40 10 PM" src="https://github.com/user-attachments/assets/b768e0d0-cce1-48b9-9ca0-c45a6b61d81f" />
+<img width="120" alt="Screenshot 2025-03-05 at 11 40 25 PM" src="https://github.com/user-attachments/assets/a157c8f2-8b28-4828-acde-02276a25bb65" />
 
-This project provides a simple setup for deploying **InfluxDB 2.x** and **Grafana** using Docker Compose. It uses Docker secrets to securely handle sensitive information like the InfluxDB admin username, password, and token.
+# InfluxDB and Grafana Deployment using Docker Compose & Docker Secret
+
+This project provides a simple setup for deploying **InfluxDB 2.x** and **Grafana** using **Docker Compose**. It uses Docker **secrets** to securely handle sensitive information like the InfluxDB admin username, password, and token.
 
 ## Prerequisites
 
@@ -27,8 +32,8 @@ influxDB_grafana/ <br/>
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repository>.git
-cd <your-repository>/influxDB_grafana
+git clone https://github.com/lllehcar/docker-compose-secret-influxdb-grafana.git
+cd docker-compose-secret-influxdb-grafana/influxDB_grafana
 ```
 
 
@@ -63,10 +68,10 @@ Credentials to login to InfluxDB would be the ones set in txt files.
 Default Grafana login credentials:<br>
 Username: admin<br>
 Password: admin<br>
-<img width="1425" alt="Screenshot 2025-03-05 at 11 32 07 PM" src="https://github.com/user-attachments/assets/27e4bad7-0a79-48b0-9beb-7797534425d3" />
+
+<img width="1440" alt="Screenshot 2025-03-05 at 11 37 33 PM" src="https://github.com/user-attachments/assets/d14460a8-6365-4670-b91b-73560167b05d" />
 
 After logging in, you can configure Grafana to connect to InfluxDB as a data source. For example:<br>
-
 URL: http://influxdb2:8086<br>
 Database: home<br>
 Token: Use the admin token from the influxdb2-admin-token.txt file.<br>
